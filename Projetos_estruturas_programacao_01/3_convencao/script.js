@@ -1,0 +1,17 @@
+//let 3nome='Teste';
+//console.log(let 3nome);
+let nome3='Teste1';
+console.log(nome3);
+let $nome='Teste2';
+console.log($nome);
+let _nome='Teste 3';
+//let !nome='Teste 4';
+//console(let !nome);
+let Nome='Teste 5';
+console.log(Nome);
+//let @nome='Teste 6';
+//console.log(let @nome);
+let seuNome='Teste 7';
+console.log(seuNome);
+let seu_nome='Teste 8';
+console.log(seu_nome);
