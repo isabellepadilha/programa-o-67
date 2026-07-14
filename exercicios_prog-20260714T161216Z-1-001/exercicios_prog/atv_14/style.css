@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    height:100vh;
+}
+
+.ocean{
+    width:100%;
+    height:100vh;
+    position:relative;
+
+    background:
+    radial-gradient(circle at 20% 25%, rgba(255,255,255,.08) 0 100px, transparent 120px),
+    radial-gradient(circle at 70% 40%, rgba(255,255,255,.05) 0 150px, transparent 180px),
+    linear-gradient(
+        to bottom,
+        #2db7e6 0%,
+        #147db1 35%,
+        #0c496c 70%,
+        #06253b 100%
+    );
+}
+
+.whale-shark{
+    position:absolute;
+    width:900px;
+    left:-950px;
+    top:30%;
+    animation: swim 18s linear infinite;
+}
+
+svg{
+    width:100%;
+    overflow:visible;
+}
+
+.body-group{
+    transform-origin:center;
+    animation: float 5s ease-in-out infinite;
+}
+
+.tail{
+    transform-origin:760px 200px;
+    animation: tailMove .8s ease-in-out infinite alternate;
+}
+
+.body{
+    filter: drop-shadow(0 15px 15px rgba(0,0,0,.2));
+}
+
+@keyframes swim{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(calc(100vw + 1800px));
+    }
+}
+
+@keyframes tailMove{
+    from{
+        transform:rotate(-8deg);
+    }
+
+    to{
+        transform:rotate(8deg);
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+}
